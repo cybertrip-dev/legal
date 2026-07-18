@@ -53,6 +53,21 @@ function checkGame(game: Game): void {
   }
 }
 
+/** 生成ページ共通の検査。ゲームページにもルートの索引にも同じだけ効かせる。 */
+function checkPageHtml(html: string, at: string): void {
+  if (/\{[A-Z_]+\}|\$\{/.test(html)) fail(at, "未置換のプレースホルダが残っている");
+  if (html.includes("undefined") || html.includes("[object Object]")) {
+    fail(at, "undefined / [object Object] が混入している");
+  }
+  // "playing X, a game.." や "INC.. Pick" のような二重句読点
+  if (/[,.]\s*[,.]/.test(html)) fail(at, "句読点が重複している");
+  if (!html.trimEnd().endsWith("</html>")) fail(at, "HTML が閉じていない");
+
+  const opens = (html.match(/<(p|ul|li|h1|h2)\b/g) ?? []).length;
+  const closes = (html.match(/<\/(p|ul|li|h1|h2)>/g) ?? []).length;
+  if (opens !== closes) fail(at, `タグの開閉数が不一致 (open ${opens} / close ${closes})`);
+}
+
 function checkHtml(game: Game): void {
   for (const file of ["index.html", "privacy.html"]) {
     const path = join(ROOT, game.slug, file);
@@ -63,18 +78,8 @@ function checkHtml(game: Game): void {
     const html = readFileSync(path, "utf8");
     const at = `${game.slug}/${file}`;
 
-    if (/\{[A-Z_]+\}|\$\{/.test(html)) fail(at, "未置換のプレースホルダが残っている");
+    checkPageHtml(html, at);
     if (!html.includes(game.title)) fail(at, "タイトルが本文に出てこない");
-    if (html.includes("undefined") || html.includes("[object Object]")) {
-      fail(at, "undefined / [object Object] が混入している");
-    }
-    // "playing X, a game.." のような二重句読点
-    if (/[,.]\s*[,.]/.test(html)) fail(at, "句読点が重複している");
-    if (!html.trimEnd().endsWith("</html>")) fail(at, "HTML が閉じていない");
-
-    const opens = (html.match(/<(p|ul|li|h1|h2)\b/g) ?? []).length;
-    const closes = (html.match(/<\/(p|ul|li|h1|h2)>/g) ?? []).length;
-    if (opens !== closes) fail(at, `タグの開閉数が不一致 (open ${opens} / close ${closes})`);
   }
 
   const support = readFileSync(join(ROOT, game.slug, "index.html"), "utf8");
@@ -103,6 +108,7 @@ function main(): void {
     fail("index.html", "未生成");
   } else {
     const html = readFileSync(index, "utf8");
+    checkPageHtml(html, "index.html");
     for (const game of meta.games) {
       if (!html.includes(`href="${game.slug}/"`)) {
         fail("index.html", `${game.slug} へのリンクが無い`);

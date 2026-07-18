@@ -242,10 +242,13 @@ export function indexPage(meta: GamesFile): string {
   li { margin: 0.35rem 0; }
   .updated { color: #666; font-size: 0.9rem; }`;
 
+  // 社名が既にピリオドで終わるので、文末のピリオドを重ねない。
+  const publisher = meta.publisher.replace(/\.$/, "");
+
   const body = `<h1>${meta.publisher} &mdash; Game Support &amp; Privacy</h1>
 <p class="updated">Last updated: ${meta.lastUpdated}</p>
 
-<p>Support and privacy pages for every game published by ${meta.publisher}. Pick a game
+<p>Support and privacy pages for every game published by ${publisher}. Pick a game
 below, or email us at <a href="mailto:${meta.contactEmail}">${meta.contactEmail}</a>.</p>
 
 <h2>Games (${meta.games.length})</h2>
