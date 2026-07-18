@@ -1,0 +1,13 @@
+{
+  "name": "legal",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.1",
+    "esbuild": "^0.25.0",
+    "typescript": "^5.6.0"
+  }
+}
