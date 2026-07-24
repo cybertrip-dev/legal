@@ -1308,12 +1308,12 @@
       "title": "Rush-Hour Relay",
       "genre": "a tap-and-swipe arcade road-crossing game",
       "mechanic": "Tap to hop one row forward and swipe to move sideways or back off. Read the countdown on each traffic signal, land while the light is green or amber, and chain those landings into a multiplier up to x5 as you cross the city.",
-      "storedData": "runs, coins, unlocked skins and themes, daily records, streaks, and settings",
+      "storedData": "runs, coins, unlocked skins, daily records, streaks, and settings",
       "offlinePlayable": true,
       "hasAds": true,
       "hasRewardedAds": true,
-      "purchaseModel": "onetime",
-      "purchaseItems": "Remove Ads, themes, and the bundle",
+      "purchaseModel": "subscription",
+      "purchaseItems": "",
       "permissions": []
     }
   ]
