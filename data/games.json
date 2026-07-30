@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "July 18, 2026",
+  "lastUpdated": "July 30, 2026",
   "publisher": "CYBERTRIP, INC.",
   "contactEmail": "info@cybertrip.jp",
   "games": [
@@ -1309,6 +1309,32 @@
       "genre": "a tap-and-swipe arcade road-crossing game",
       "mechanic": "Tap to hop one row forward and swipe to move sideways or back off. Read the countdown on each traffic signal, land while the light is green or amber, and chain those landings into a multiplier up to x5 as you cross the city.",
       "storedData": "runs, coins, unlocked skins, daily records, streaks, and settings",
+      "offlinePlayable": true,
+      "hasAds": true,
+      "hasRewardedAds": true,
+      "purchaseModel": "subscription",
+      "purchaseItems": "",
+      "permissions": []
+    },
+    {
+      "slug": "ghost-lane",
+      "title": "Ghost Lane",
+      "genre": "a swipe-only three-lane arcade runner",
+      "mechanic": "Swipe sideways to change lane and swipe up to jump. The lanes you stood in on your previous run come back as walls on the next one, so improving means leaving your future self a way through rather than simply running faster.",
+      "storedData": "runs, ghosts of your previous runs, personal bests, replays, tokens, unlocked cosmetics, achievements, daily records, streaks, and settings",
+      "offlinePlayable": true,
+      "hasAds": true,
+      "hasRewardedAds": true,
+      "purchaseModel": "subscription",
+      "purchaseItems": "",
+      "permissions": []
+    },
+    {
+      "slug": "rooftop-rhythm",
+      "title": "Rooftop Rhythm",
+      "genre": "a two-input rhythm runner",
+      "mechanic": "Swipe up or down to move between three rooftops and tap to hop, in time with the music. Each rooftop is an instrument: the higher you run the thicker the song and the busier the obstacles. Contact never ends the run — the stem you were standing on simply drops out for eight beats.",
+      "storedData": "best arrangement rates, ranks, combos, the pattern codex, achievements, saved highlights, the daily streak, your audio calibration offset, and settings",
       "offlinePlayable": true,
       "hasAds": true,
       "hasRewardedAds": true,
