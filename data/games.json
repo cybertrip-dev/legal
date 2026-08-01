@@ -732,11 +732,11 @@
       "permissions": []
     },
     {
-      "slug": "pocket-pet",
-      "title": "POCKET PET",
+      "slug": "snack-or-nap",
+      "title": "SNACK OR NAP",
       "genre": "a one-tap virtual pet-raising game",
-      "mechanic": "Tap the moment a hunger or sleep bubble's shrinking ring closes to care for your creature. How you balance feeding and resting steers which of the fifteen forms it evolves into, and every final form you raise is recorded in your evolution dex.",
-      "storedData": "player name, care records, coins, XP, evolution dex, unlocked cases, streaks, daily records, mission progress, and settings",
+      "mechanic": "Tap the moment a hunger or sleep bubble's shrinking ring closes to care for your creature. How you balance feeding and resting steers which of the fifteen forms it grows into, and every final form you raise is recorded in your creature album.",
+      "storedData": "player name, care records, coins, XP, creature album, unlocked cases, streaks, daily records, mission progress, and settings",
       "offlinePlayable": true,
       "hasAds": true,
       "hasRewardedAds": false,
