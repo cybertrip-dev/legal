@@ -1338,8 +1338,8 @@
       "offlinePlayable": true,
       "hasAds": true,
       "hasRewardedAds": true,
-      "purchaseModel": "onetime",
-      "purchaseItems": "Remove Ads",
+      "purchaseModel": "subscription",
+      "purchaseItems": "",
       "permissions": [],
       "handWritten": true
     },
