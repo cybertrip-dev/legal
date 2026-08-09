@@ -62,7 +62,13 @@ function main(): void {
     throw new Error("data/games.json に slug の重複があります");
   }
 
+  const kept: string[] = [];
   for (const game of meta.games) {
+    // 手書きページは索引と掃除の対象には入れるが、中身は触らない。
+    if (game.handWritten) {
+      kept.push(game.slug);
+      continue;
+    }
     const dir = join(ROOT, game.slug);
     mkdirSync(dir, { recursive: true });
     writeFileSync(join(dir, "index.html"), supportPage(game, meta));
@@ -76,7 +82,9 @@ function main(): void {
 
   const removed = removeStaleDirs(slugs);
 
-  console.log(`generated ${meta.games.length} games (${meta.games.length * 2} pages) + index.html`);
+  const gen = meta.games.length - kept.length;
+  console.log(`generated ${gen} games (${gen * 2} pages) + index.html`);
+  if (kept.length) console.log(`left alone (handWritten): ${kept.join(", ")}`);
   if (removed.length) console.log(`removed stale: ${removed.join(", ")}`);
 }
 

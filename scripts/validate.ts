@@ -79,7 +79,10 @@ function checkHtml(game: Game): void {
     const at = `${game.slug}/${file}`;
 
     checkPageHtml(html, at);
-    if (!html.includes(game.title)) fail(at, "タイトルが本文に出てこない");
+    // ページ側はタイトルを HTML エスケープして書き出す。生の文字列で探すと
+    // & を含むタイトル（"Blinks: Drop & Pop"）だけが必ず落ちる。
+    const shown = game.title.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    if (!html.includes(shown)) fail(at, "タイトルが本文に出てこない");
   }
 
   const support = readFileSync(join(ROOT, game.slug, "index.html"), "utf8");

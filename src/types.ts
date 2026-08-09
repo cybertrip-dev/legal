@@ -47,6 +47,15 @@ export interface Game {
   purchaseItems: string;
   /** 実際に要求する端末機能。無ければ空配列。 */
   permissions: Permission[];
+  /**
+   * ページを手書きで維持していて、生成で上書きしてはいけない場合だけ true。
+   *
+   * games.json に載っていないディレクトリは `make generate` が孤児として削除する。
+   * つまり手書きページを載せずに置いておくことはできず、載せれば上書きされる —
+   * 実際 blinks の手書きページはこの板挟みで一度消えている。この旗は
+   * 「載せる（索引に出る・掃除の対象外）が、生成はしない」を表す。
+   */
+  handWritten?: boolean;
 }
 
 export interface GamesFile {
