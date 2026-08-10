@@ -82,6 +82,19 @@
       "permissions": []
     },
     {
+      "slug": "bee-bloom",
+      "title": "Bee Bloom",
+      "genre": "a one-finger territory and gardening game",
+      "mechanic": "Steer a bee by touching where you want it to fly. Crossing bare soil lays a pollen trail, and returning to already-bloomed ground closes the loop so everything inside it flowers at once. The shape you enclosed decides the flower you get — its corners and roundness set the petal count and form — and pollen is a fixed budget per garden with no way to refill it.",
+      "storedData": "gardens completed, bloom percentage records, flower codex entries, unlocked bee and garden skins, achievements, daily records, and settings",
+      "offlinePlayable": true,
+      "hasAds": true,
+      "hasRewardedAds": true,
+      "purchaseModel": "subscription",
+      "purchaseItems": "",
+      "permissions": []
+    },
+    {
       "slug": "blind-spot",
       "title": "BLIND SPOT",
       "genre": "a one-tap reaction game built on your eye's natural blind spot",
@@ -382,6 +395,19 @@
       "permissions": []
     },
     {
+      "slug": "domino-orchard",
+      "title": "Domino Orchard",
+      "genre": "a one-stroke chain-reaction puzzle",
+      "mechanic": "Draw a single unbroken line and it becomes a row of standing dominoes across the orchard. Tap any one of them to topple it, and tapping the middle sends the chain running both directions at once. Fruit trees relay the chain onward as they fall, there is no timer and nothing is lost on a failure, and a run that stops short shows exactly how far the chain did not reach.",
+      "storedData": "stage progress, harvest records, chain length bests, unlocked tile and orchard skins, achievements, daily records, and settings",
+      "offlinePlayable": true,
+      "hasAds": true,
+      "hasRewardedAds": true,
+      "purchaseModel": "subscription",
+      "purchaseItems": "",
+      "permissions": []
+    },
+    {
       "slug": "dont-blink",
       "title": "DON'T BLINK",
       "genre": "a one-tap neon arcade game about holding still",
@@ -408,6 +434,19 @@
       "permissions": []
     },
     {
+      "slug": "drain-master",
+      "title": "Drain Master",
+      "genre": "a one-finger flood-clearing game",
+      "mechanic": "Drag a single mobile drain nozzle around a flooded street. Water flows downhill on its own, so suction is decided by where you stand rather than how fast you chase it — park at the low point of a basin and the water comes to you, stand on a rise and almost nothing reaches the intake. Leave the upstream basins too long and they overflow back into ground you already cleared.",
+      "storedData": "stage progress, litres drained, nozzle level records, unlocked nozzle and town skins, achievements, daily records, and settings",
+      "offlinePlayable": true,
+      "hasAds": true,
+      "hasRewardedAds": true,
+      "purchaseModel": "subscription",
+      "purchaseItems": "",
+      "permissions": []
+    },
+    {
       "slug": "drop-catch",
       "title": "DROP CATCH",
       "genre": "a one-finger reflex arcade game",
@@ -426,6 +465,19 @@
       "genre": "a placement puzzle",
       "mechanic": "Every piece you place is placed again one turn later, one cell further on. Fill a row or column to clear it, and a clear caused by an echo pays double. What you are really playing against is your own previous move.",
       "storedData": "best depth, lines cleared, echo and perfect counts, chain and burst records, daily streaks, unlocked marks and fields, badges, pulse, and settings",
+      "offlinePlayable": true,
+      "hasAds": true,
+      "hasRewardedAds": true,
+      "purchaseModel": "subscription",
+      "purchaseItems": "",
+      "permissions": []
+    },
+    {
+      "slug": "echo-hopper",
+      "title": "Echo Hopper",
+      "genre": "a one-thumb grid-hopping arcade runner",
+      "mechanic": "Hop north across a seven-column grid with a virtual stick while every move you make is recorded. At each zone boundary you step on one of three plates to choose how that recording comes back — mirrored, shifted or delayed — and it returns as an echo running the other way. The only hazards are copies of yourself, none of them can be erased, and you score by swallowing an echo inside its brief absorbing window and welding it onto the next one.",
+      "storedData": "scores, best depth and generation records, absorb and link streaks, unlocked trails and palettes, achievements, daily records, and settings",
       "offlinePlayable": true,
       "hasAds": true,
       "hasRewardedAds": true,
@@ -611,6 +663,19 @@
       "offlinePlayable": true,
       "hasAds": true,
       "hasRewardedAds": false,
+      "purchaseModel": "subscription",
+      "purchaseItems": "",
+      "permissions": []
+    },
+    {
+      "slug": "fuse-flick",
+      "title": "Fuse Flick",
+      "genre": "a one-stroke chain-reaction puzzle",
+      "mechanic": "The bombs are already placed; all you draw is one continuous fuse. The spark always travels at the same speed, so every extra millimetre of detour becomes a measurable delay before that bomb goes off, and the line you draw is really a timeline. Order and spacing are the whole puzzle, the simulation is deterministic, and a failed attempt tells you in numbers how far short the chain fell.",
+      "storedData": "stage progress, best fuse lengths, chain records, unlocked spark and blast themes, achievements, daily records, and settings",
+      "offlinePlayable": true,
+      "hasAds": true,
+      "hasRewardedAds": true,
       "purchaseModel": "subscription",
       "purchaseItems": "",
       "permissions": []
@@ -876,6 +941,19 @@
       "permissions": []
     },
     {
+      "slug": "library-collapse",
+      "title": "Library Collapse",
+      "genre": "a one-tap tidying puzzle",
+      "mechanic": "Books are piled on a returns desk after closing. Tapping a cluster of the same genre collapses it, which scores nothing on its own — points come from what falls afterwards, when a column happens to end up stepping up in size from the bottom, paperback then pocket then hardback. A column that forms that staircase lights up and slides itself onto the shelf. You act on colour; the board resolves on height.",
+      "storedData": "stage progress, books shelved, staircase records, unlocked binding and shelf themes, achievements, daily records, and settings",
+      "offlinePlayable": true,
+      "hasAds": true,
+      "hasRewardedAds": true,
+      "purchaseModel": "subscription",
+      "purchaseItems": "",
+      "permissions": []
+    },
+    {
       "slug": "lights-out",
       "title": "LIGHTS OUT: GRID START",
       "genre": "a one-hold arcade racing-start game",
@@ -980,6 +1058,19 @@
       "permissions": []
     },
     {
+      "slug": "moonlight-laundry",
+      "title": "Moonlight Laundry",
+      "genre": "a one-finger sorting and timing game",
+      "mechanic": "A coin laundry lit only by moonlight. You decide when to start each of the three washers, so the rate work arrives at is in your hands rather than the game's. Laundry that overflows onto the floor is not a loss — a downward swipe puts it back on the pile — so a hundred-second shift is about when to borrow time and when to pay it back rather than about reflexes.",
+      "storedData": "nights completed, chain records, pile-clear bests, unlocked fabric and moon themes, achievements, daily records, and settings",
+      "offlinePlayable": true,
+      "hasAds": true,
+      "hasRewardedAds": true,
+      "purchaseModel": "subscription",
+      "purchaseItems": "",
+      "permissions": []
+    },
+    {
       "slug": "museum-sprint",
       "title": "Museum Sprint",
       "genre": "an arcade stealth dash",
@@ -1053,6 +1144,19 @@
       "offlinePlayable": true,
       "hasAds": true,
       "hasRewardedAds": false,
+      "purchaseModel": "subscription",
+      "purchaseItems": "",
+      "permissions": []
+    },
+    {
+      "slug": "orbit-2048",
+      "title": "Orbit 2048",
+      "genre": "a one-finger number-merging puzzle",
+      "mechanic": "The board is three concentric rings of eight sectors instead of a grid. You spin a ring with your finger rather than sliding rows, gravity points at the centre, and only equal numbers lined up along a radius merge — never two side by side on the same ring. Turning one ring always turns another the opposite way, so every move is a choice of which direction to travel, not just where to end up.",
+      "storedData": "scores, highest tile reached, merge chain records, unlocked ring and tile themes, achievements, daily records, and settings",
+      "offlinePlayable": true,
+      "hasAds": true,
+      "hasRewardedAds": true,
       "purchaseModel": "subscription",
       "purchaseItems": "",
       "permissions": []
@@ -1461,6 +1565,19 @@
       "permissions": []
     },
     {
+      "slug": "sumo-sidewalk",
+      "title": "Sumo Sidewalk",
+      "genre": "a swipe-and-tap sidewalk runner",
+      "mechanic": "Run three lanes of pavement and decide which oncoming wrestler to meet head-on. There is exactly one way to gain weight — win a clash and take a third of the loser's mass — and exactly one way to shed it, a charge that did not win. Both come out of the same tap, so every tap is a bet on whether you want to be heavier or narrower. Weight raises your score multiplier and widens your body until the gaps stop fitting.",
+      "storedData": "runs, best distance and weight records, clash streaks, unlocked belts and trails, achievements, daily records, and settings",
+      "offlinePlayable": true,
+      "hasAds": true,
+      "hasRewardedAds": true,
+      "purchaseModel": "subscription",
+      "purchaseItems": "",
+      "permissions": []
+    },
+    {
       "slug": "sushi-grab",
       "title": "SUSHI GRAB",
       "genre": "a one-tap arcade sushi-catching game",
@@ -1557,6 +1674,19 @@
       "genre": "a 60-second management arcade game",
       "mechanic": "A cutaway building where couriers work on their own and the lift runs a fixed timetable you can never touch. All you decide is who carries what, how far, and where they hand it off.",
       "storedData": "lifetime and best deliveries, solo records, relays, truck runs, redeliveries, five-star shifts, dailies completed, unlocked liveries, badges, crew, and settings",
+      "offlinePlayable": true,
+      "hasAds": true,
+      "hasRewardedAds": true,
+      "purchaseModel": "subscription",
+      "purchaseItems": "",
+      "permissions": []
+    },
+    {
+      "slug": "toy-hospital",
+      "title": "Toy Hospital",
+      "genre": "a one-finger merge and timing game",
+      "mechanic": "Broken parts drop onto a tray. Merge them to fill the slots on the current prescription, then stop the needle sweeping along the bottom of the screen inside its green band to discharge the toy. A round lasts a minute or two, the merging is where the planning happens and the needle is where the nerve is, and nothing purchasable touches the difficulty, the odds, the score or the clock.",
+      "storedData": "toys discharged, ward records, merge and timing streaks, unlocked ward and toy skins, achievements, daily records, and settings",
       "offlinePlayable": true,
       "hasAds": true,
       "hasRewardedAds": true,
