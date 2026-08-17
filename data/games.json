@@ -2226,6 +2226,32 @@
       "purchaseModel": "subscription",
       "purchaseItems": "",
       "permissions": []
+    },
+    {
+      "slug": "mirror-match",
+      "title": "Mirror Match",
+      "genre": "a two-board sliding merge puzzle played with one swipe",
+      "mechanic": "One swipe moves both 4x4 boards at once, and the right-hand board is drawn as a mirror, so a sideways swipe pushes the two apart while an up or down swipe moves them together. Tiles merge only with the same stamp at the same rank; the way you get space back is Resonance, which clears both boards at once when matching tiles sit at positions that mirror each other across the seam. The tile you are dealt is always the same on both sides and only the cell it lands in differs, so a run is decided by where you put things rather than by what you drew. The run ends the moment one board is full with no merge left in it.",
+      "storedData": "best scores and runs, streaks and daily results, unlocked cosmetics, achievements, currency, and settings",
+      "offlinePlayable": true,
+      "hasAds": true,
+      "hasRewardedAds": true,
+      "purchaseModel": "subscription",
+      "purchaseItems": "",
+      "permissions": []
+    },
+    {
+      "slug": "offroad-fossils",
+      "title": "Offroad Fossils",
+      "genre": "a short-run driving game where digging is a landing rather than a dig",
+      "mechanic": "The screen is split: the top half is the ridge you drive, the bottom half is the strata directly beneath it, showing how deep each fossil is buried and the shape of every hole you have already made. Three pedals are the whole input, and they swap meaning in the air: on the ground they are throttle, brake and a drill charge, and airborne they pitch the truck nose-down, nose-up and lock its rotation. Depth is settled at the instant of impact with no dice involved — it comes from the angle between the truck and the slope it lands on, so a fast landing at the wrong angle only breaks the truck. What you dig up fills a museum you can walk through.",
+      "storedData": "best scores and runs, streaks and daily results, unlocked cosmetics, achievements, currency, and settings",
+      "offlinePlayable": true,
+      "hasAds": true,
+      "hasRewardedAds": true,
+      "purchaseModel": "subscription",
+      "purchaseItems": "",
+      "permissions": []
     }
   ]
 }
