@@ -210,7 +210,8 @@
       "hasRewardedAds": true,
       "purchaseModel": "subscription",
       "purchaseItems": "",
-      "permissions": []
+      "permissions": [],
+      "android": true
     },
     {
       "slug": "bounce-merge",
