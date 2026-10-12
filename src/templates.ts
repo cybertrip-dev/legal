@@ -108,7 +108,12 @@ few business days.</p>`);
   if (game.purchaseModel === "subscription") {
     sections.push(`<h2>Subscription</h2>
 <p>The optional "Remove Ads" subscription removes all ads. Manage or cancel it any time
-in iOS <strong>Settings &rarr; [your name] &rarr; Subscriptions</strong>.</p>`);
+in iOS <strong>Settings &rarr; [your name] &rarr; Subscriptions</strong>.</p>${
+      game.android
+        ? `\n<p>On Android, manage or cancel it in <strong>Google Play &rarr; Payments &amp;
+subscriptions &rarr; Subscriptions</strong>.</p>`
+        : ""
+    }`);
   } else if (game.purchaseModel === "onetime") {
     const items = game.purchaseItems ? ` (${esc(game.purchaseItems)})` : "";
     sections.push(`<h2>Purchases</h2>
@@ -155,7 +160,12 @@ region, ads may be personalized or non-personalized.</p>
 <ul>
   <li>On iOS, we ask for permission via <strong>App Tracking Transparency (ATT)</strong>
       before any tracking for personalized ads. If you decline, you still see ads, but
-      non-personalized ones.</li>
+      non-personalized ones.</li>${
+        game.android
+          ? `\n  <li>On Android, Google may use the device's advertising ID. You can delete or
+      reset it in Android <strong>Settings &rarr; Privacy &rarr; Ads</strong> (wording varies by device).</li>`
+          : ""
+      }
   <li>In the European Economic Area and the United Kingdom, a consent dialog is
       shown before any ads are served. Personalized ads are shown only with your
       consent; otherwise ads are non-personalized.</li>
@@ -181,17 +191,22 @@ ${items}
 </ul>`);
   }
 
+  const androidBilling = game.android
+    ? `\n<p>On Android, purchases are processed by <strong>Google</strong> through Google Play
+Billing. We never receive your payment details. Google's privacy policy applies:
+<a href="https://policies.google.com/privacy">policies.google.com/privacy</a></p>`
+    : "";
   if (game.purchaseModel === "subscription") {
     sections.push(`<h2>Purchases</h2>
 <p>Subscriptions are processed by <strong>Apple</strong> through the App Store using
 StoreKit. We never receive your payment details. Apple's privacy policy applies:
-<a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a></p>`);
+<a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a></p>${androidBilling}`);
   } else if (game.purchaseModel === "onetime") {
     sections.push(`<h2>Purchases</h2>
 <p>All purchases are one-time, non-consumable products processed by <strong>Apple</strong>
 through the App Store using StoreKit. We never receive your payment details.
 Apple's privacy policy applies:
-<a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a></p>`);
+<a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a></p>${androidBilling}`);
   }
 
   sections.push(`<h2>Children</h2>
@@ -203,6 +218,10 @@ personal information from them.</p>`);
     choices.push(`  <li>Change tracking permission any time in iOS <strong>Settings &rarr; Privacy &amp;
       Security &rarr; Tracking</strong>.</li>`);
     choices.push(`  <li>Reset the advertising identifier in iOS Settings.</li>`);
+    if (game.android) {
+      choices.push(`  <li>On Android, delete or reset the advertising ID in <strong>Settings &rarr; Privacy &rarr;
+      Ads</strong>.</li>`);
+    }
   }
   for (const p of game.permissions) {
     const { label, path } = PERMISSION_SETTINGS[p];
@@ -213,6 +232,10 @@ personal information from them.</p>`);
   if (game.purchaseModel === "subscription") {
     choices.push(`  <li>Manage or cancel the subscription in <strong>Settings &rarr; [your name] &rarr;
       Subscriptions</strong>.</li>`);
+    if (game.android) {
+      choices.push(`  <li>On Android, manage or cancel it in <strong>Google Play &rarr; Payments &amp;
+      subscriptions &rarr; Subscriptions</strong>.</li>`);
+    }
   }
   choices.push(`  <li>Delete the app to delete all locally stored game data.</li>`);
 
