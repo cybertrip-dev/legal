@@ -320,15 +320,16 @@
     {
       "slug": "chain-kitchen",
       "title": "Chain Kitchen",
-      "genre": "a one-tap cooking physics puzzle",
-      "mechanic": "Cut the ropes holding each ingredient so that everything lands in the pot in the order the recipe asks for. A timeline along the bottom of the screen shows when the things already in flight will arrive, so the order you cut in is rarely the order they land in.",
-      "storedData": "scores, coins, tickets served, personal bests, unlocked cosmetics, achievements, daily records, streaks, and settings",
+      "genre": "a one-finger kitchen catching arcade game",
+      "mechanic": "Ingredients slide down crossing rails to the counter; slide the pot so it is under each one as it lands. The arrival bar along the bottom says what is coming and when, and three drops close the kitchen.",
+      "storedData": "scores, spice, tickets served, personal bests, unlocked kitchens, pots and blades, goals, daily records, streaks, and settings",
       "offlinePlayable": true,
       "hasAds": true,
       "hasRewardedAds": true,
       "purchaseModel": "subscription",
       "purchaseItems": "",
-      "permissions": []
+      "permissions": [],
+      "android": true
     },
     {
       "slug": "cheat-day",
