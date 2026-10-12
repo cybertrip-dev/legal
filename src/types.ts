@@ -47,6 +47,8 @@ export interface Game {
   purchaseItems: string;
   /** 実際に要求する端末機能。無ければ空配列。 */
   permissions: Permission[];
+  /** Google Play でも配信しているか。広告 ID・Play Billing・Play での解約方法の記述を足す。 */
+  android?: boolean;
   /**
    * ページを手書きで維持していて、生成で上書きしてはいけない場合だけ true。
    *
