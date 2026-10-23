@@ -1583,6 +1583,24 @@
       "permissions": []
     },
     {
+      "slug": "oriru",
+      "title": "Oriru",
+      "genre": "a train oversleeping-prevention alarm for Japanese railways",
+      "mechanic": "Pick the station where you get off, set the alarm, and go to sleep. As the train approaches, Oriru wakes you with a real alarm that sounds even in silent mode, and keeps watching until you have actually got off.",
+      "storedData": "saved stations, rescue history, learned travel times, and settings",
+      "offlinePlayable": true,
+      "hasAds": false,
+      "hasRewardedAds": false,
+      "purchaseModel": "subscription",
+      "purchaseItems": "Oriru Pro monthly and yearly subscriptions and a lifetime unlock",
+      "permissions": [
+        "location",
+        "motion",
+        "notifications"
+      ],
+      "handWritten": true
+    },
+    {
       "slug": "pack-rip",
       "title": "PACKRIP",
       "genre": "a one-tap card-pack opening game",
